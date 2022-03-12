@@ -16,7 +16,7 @@ function computerSelection(){
     const choices = ["rock", "paper", "scissors"]
     
     console.log(getRandomIntInclusive()); // checking to make sure random int worked
-    let cSelection = choices[getRandomIntInclusive()]
+    let cSelection = choices[getRandomIntInclusive()] //rolls random int a second time
     return cSelection
 }
 
@@ -47,16 +47,20 @@ function playRound(pSelection, cSelection){
 }
 
 //console.log(playRound(playerSelection(), computerSelection()))
+function game(){
+    
 
-for (let i = 0; i < 5; i++){
+    for (let i = 0; i < 5; i++){
     playRound(playerSelection(), computerSelection())
-}
+    }
+    console.log(pWin);
+    console.log(cWin);
 
-console.log(pWin);
-console.log(cWin);
-
-if (pWin > cWin){
-    console.log("You've won the game!")
-} else{
+    if (pWin > cWin){
+        console.log("You've won the game!")
+    } else{
     console.log("The computer won the game!")
+    }
 }
+
+console.log(game());
