@@ -1,0 +1,41 @@
+body{
+    background-color: rgb(61, 59, 59);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: whitesmoke ;
+
+}  
+
+#header{
+    text-align: center;
+}
+
+#battlefield{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+    gap: 20px;
+    text-align: center;
+    
+}
+
+#results{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    color: black;
+}
+
+#wins{
+    color: whitesmoke;
+}
+
+#losses{
+    color: whitesmoke;
+}
+
+

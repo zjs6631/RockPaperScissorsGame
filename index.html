@@ -5,9 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="javascript.js"></script>
+    <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
-    <h1>Lets play a game!</h1>
+    <div id="header">
+        <h1>--ROCK, PAPER, SCISSORS--</h1>
+        <h2>The game of champions</h2>
+    </div>
+    <div id="battlefield">
+        <div class="userSelect">
+            <h3>Please choose your weapon:</h3>
+            <button id="rock">Rock</button>
+            <button id="paper">Paper</button>
+            <button id="scissors">Scissors</button>
+            <div class="userChoice">
+                <h3>You have selected:</h3>
+                <div id="weapon">-----</div>
+            </div>
+        </div>
+        <div class="computerSelect">
+            <h3>The computer has chosen:</h3>
+            <h3 id="compWeapon">-----</h3>
+        </div>
+    </div>
+    <div id="results">
+        <div id="wins">
+            <h3>Wins:</h3>
+            <h3 id="winCounter">0</h3>
+        </div>
+        <div>
+            <button id="play">Play round</button>
+            <h3 id="WL">------</h3>
+        </div>
+        <div id="losses">
+            <h3>Losses:</h3>
+            <h3 id="lossCounter">0</h3>
+        </div>
+    </div>
 </body>
+<footer> <script src="javascript.js"></script> </footer>
 </html>
